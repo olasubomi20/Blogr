@@ -5,20 +5,19 @@
 }
 .a1{
     width: 100%;
-    height: 45vh;
+    height: 50vh;
     background: url(images/bg-pattern-intro-desktop.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: hsl(355, 100%, 74%);
     display: flex;
     flex-direction: column;
-    gap: 40px;
     border-radius: 0px 50px 0px 50px;
 }
 .nav{
     display: flex;
+    height: 100px;
     align-items: center;
-    width: 100%;
     gap: 50%;
     padding-left: 50px;
 }
@@ -33,7 +32,8 @@
     gap: 25px;
 }
 .a2{
-    gap: 10px;
+    display: flex;
+    gap: 30px;
 }
 .signup{
     padding: 5px;
@@ -56,6 +56,10 @@
     text-align: center;
     gap: 30px;
 }
+.d3{
+    display: flex;
+    gap: 30px;
+}
 .free{
     padding: 5px;
     width: 10vw;
@@ -72,42 +76,50 @@
     color:white;
     background-color: hsl(356, 100%, 66%);;
 }
-.Grow{
-    color: white;
-    gap: 40px;
-}
-.a2{
-      display: flex;
-      justify-content: space-around;
-      padding: 20px;
-
-}
-.a2 h3{
+.out{
     display: flex;
     flex-direction: column;
+    gap: 40px;
+    padding-top: 35px;
+}
+.outtop{
+    align-self: center;
+}
+.extensible{
+    display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 30px;
+    justify-content: space-around;
 }
-.a2 img{
-       height: 50vh;
+.newpage{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
-.editor{
-    width: 54vw;
-    padding: 15px;
+.all1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
-.editor2{
-    width: 54vw;
-    padding: 15px;
+.all1 p{
+       width: 42vw;
 }
-
-.phone img{
+.all2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.all2 p{
+    width: 40vw;
+}
+.extensible img{
     height: 50vh;
 }
+
+
 .Art p{
-    width: 46vw;
+    width: 36vw;
     padding: 20px;
-    color: white;
+    line-height: 25px;
 }
 .Art h3{
     color: white;
@@ -116,28 +128,43 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    text-align: center;
     border-radius: 0px 40px ;
-    box-shadow: 20px;
     background-color: hsl(237, 17%, 21%);
-    height: 55vh;
-    width: 75vw;
-    gap: 15px;
-    padding: 25px;
+    height: 40vh;
+    color: white;
+    
 }
-.a3{
+.phone img{
+    height: 350px;
+}
+.sch{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    text-align: center;
+    padding: 30px 0px;
+
 
 }
 .s1 p{
-    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    width: 30vw;
+
 }
 .s2{
     width: 30vw;
     gap: 30px;
+}
+.s3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.s4{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 .laptop img{
     height: 40vh
@@ -154,15 +181,12 @@
 }
 .a4{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color: hsl(237, 17%, 21%);
     gap: 90px;
     border-radius: 0px 50px 0px 0px ;
-
-}
-.over{
-    display: flex;
-    padding: 20px;
+    color: white;
+    padding: 30px 0px;
 
 }
 .footer ul{
@@ -170,17 +194,29 @@
 }
 .number{
     list-style: none;
+    line-height: 25px;
 }
 .Team{
     list-style: none;
+    line-height: 25px;
 }
 .Connect{
     list-style: none;
+    line-height: 25px;
 }
 @media screen and (max-width:950px){
     .a1{
-        height: 60vh;
+        height: 58vh;
         border-radius: 0px 0px 0px 80px;
+        background: url(images/bg-pattern-intro-mobile.svg);
+        background-size: contain;
+        background-color: hsl(355, 100%, 74%);
+        gap: 60px;
+    }
+    .Grow{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
     .A{
         display: flex;
@@ -200,36 +236,71 @@
         width: 25vw;
     }
     .a2{
-        display: flex;
+        display:none;
         flex-direction: column-reverse;
         align-items: center;
         padding: 20px;
     }
-    .editor{
+    .out{
+        flex-direction: column;
+    }
+    .extensible{
+        flex-direction: column;
+        
+    }
+    .extensible img{
+       height: 30vh;
+    }
+    .all1{
+        align-items: center;
+        justify-content: center;
+    }
+    .all1 h1{
+        text-align: center;
+        font-size: 35px;
+        width: 70vw;
+    }
+    .all1 p{
+        text-align: center;
+        font-size: 22px;
+        width: 95vw;
+    }
+    .all2{
+        align-items: center;
+        justify-content: center;
+    }
+    .all2 h2{
+        text-align: center;
+        font-size: 30px;
         width: 60vw;
     }
-    .editor h3{
-        width:50vw ;
+    .all2 p{
+        text-align: center;
+        font-size: 22px;
+        width: 95vw;
     }
+    
     .iphone{
+        flex-direction: column;
+        height: 95vh;
+
+    }
+    .Art{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        height: 80vh;
-        width: vw;
-        padding: 35px;
     }
     .Art h3{
-        display: flex;
-        align-items: center;
         text-align: center;
-        justify-content: center;
+        font-size: 35px;
+        width: 70vw;
     }
     .Art p{
-        width: 80vw;
+        text-align: center;
+        font-size: 23px;
+        width: 83vw;
     }
-    .a3{
+    .sch{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -249,14 +320,20 @@
     
     }
     .a4{
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 5px;
-        
+        align-items: center;        
+    }
+    .number{
+        line-height: 25px;
+    }
+    .Team{
+        line-height: 25px;
+    }
+    .Connect{
+        line-height: 25px;
     }
 }
+    
    
 
 
